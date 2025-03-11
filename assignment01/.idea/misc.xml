@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/NumberEncoder/pom.xml" />
+        <option value="$PROJECT_DIR$/EventScheduler/pom.xml" />
+        <option value="$PROJECT_DIR$/IntervalMerger/pom.xml" />
+        <option value="$PROJECT_DIR$/PatternEncoder/pom.xml" />
+        <option value="$PROJECT_DIR$/PalindromeNumber/pom.xml" />
+        <option value="$PROJECT_DIR$/FractionToDecimal/pom.xml" />
+        <option value="$PROJECT_DIR$/StringTransformer/pom.xml" />
+        <option value="$PROJECT_DIR$/ArrayElementSwapper/pom.xml" />
+        <option value="$PROJECT_DIR$/PrimeDistanceFinder/pom.xml" />
+        <option value="$PROJECT_DIR$/ParenthesesValidator/pom.xml" />
+        <option value="$PROJECT_DIR$/ConsecutiveElementSum/pom.xml" />
+        <option value="$PROJECT_DIR$/NonPrimeSpiralMatrixCreator/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
