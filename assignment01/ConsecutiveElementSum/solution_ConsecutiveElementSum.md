@@ -38,7 +38,7 @@ Length of `numbers` is equal to 0, and length of `numbers` is greater than 0.
 
 ### Augment
 
-Three additional test cases have been added:
+Two additional test cases have been added:
 
 - `testOnlyNegatives` passes an array with only negative numbers.
 - `testOnlyPositives` passes an array with only positive numbers.
