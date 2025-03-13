@@ -48,4 +48,22 @@ class EventSchedulerTest {
         boolean result = EventScheduler.hasConflict(events);
         assertEquals(expected, result);
     }
+
+    // Tests an array without overlaps, where the array is not already sorted.
+    @Test
+    void testNoOverlapsNotSorted() {
+        int[][] events = {{4, 5}, {1, 3}, {6, 9}};
+        boolean expected = false;
+        boolean result = EventScheduler.hasConflict(events);
+        assertEquals(expected, result);
+    }
+
+    // Tests an array with two elements, with overlaps.
+    @Test
+    void testTwoElementsOverlap() {
+        int[][] events = {{1, 5}, {4, 5}};
+        boolean expected = true;
+        boolean result = EventScheduler.hasConflict(events);
+        assertEquals(expected, result);
+    }
 }

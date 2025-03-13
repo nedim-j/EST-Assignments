@@ -49,7 +49,15 @@ After running the test suite, IntelliJ reports 100% line coverage.
 
 ## Mutation testing
 
-After mutation testing, we have 77% mutation coverage.
+After mutation testing, we have 77% mutation coverage. The first mutation changed the line 
+`if (events.length < 2) return false;` to `if (events.length <= 2) return false;`. This was easily 
+fixable, by including an additional test `testTwoElementsOverlap`, where an array with two overlapping 
+events is passed into the function.
+
+Another mutation deleted the `Array.sort()` function. Again, we can easily fix this by including 
+a test `testNoOverlapsNotSorted` which passes an unsorted array with overlaps into the function.
+
+After running mutation testing again, we have 100% mutation coverage.
 
 ## Bug reports
 
