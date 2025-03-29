@@ -85,7 +85,7 @@ I have added the following test cases to the test suite:
 
 ## Coverage
 
-Running the Intellij Coverage tool, we are achieving 100% Line and Branch Coverage. But with the Jacoco Plugin, we are achieving 95% Line Coverage and 100% Branch Coverage. This is due to the fact that the line for the Class definition hasnt been tested, but this is not necessary because the class only has a static method, so no instance of the class is created and therefore it is unnecessary to test the class definition line.
+The jacoco report reports a test coverage of 95% for the class, 100% of the method isValid(). We are not achieving 100% because jacoco reports that line 5 (public class ParenthesesValidator) has not been tested. We could achieve 100% coverage by also testing the class instantiation, but since we are testing a class with a single static method, we do not need to test class instantiation.
 
 ## Mutation Testing
 
