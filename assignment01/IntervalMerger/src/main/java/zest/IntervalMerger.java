@@ -6,8 +6,20 @@ import java.util.LinkedList;
 public class IntervalMerger {
 
     public static int[][] mergeIntervals(int[][] intervals) {
+        // Solution: Added if-condition to also check if interval is null
+        if(intervals == null) {
+            return null;
+        }
+
         if (intervals.length <= 1) {
             return intervals;
+        }
+
+        // Solution: Added check for null or invalid intervals
+        for (int[] interval : intervals) {
+            if (interval == null || interval.length != 2) {
+                return intervals;
+            }
         }
 
         // Sort the intervals by their starting times
