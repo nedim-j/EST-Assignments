@@ -2,6 +2,10 @@ package zest;
 
 public class StringTransformer {
     public static int minOperations(String start, String target) {
+        if (start == null || target == null) {
+            return -1;
+        }
+
         int m = start.length();
         int n = target.length();
         int[][] dp = new int[m + 1][n + 1];

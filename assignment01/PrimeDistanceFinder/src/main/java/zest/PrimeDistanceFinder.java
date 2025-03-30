@@ -1,5 +1,9 @@
 package zest;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class PrimeDistanceFinder {
     /**
      * Finds the smallest difference between any two prime numbers in an array.
@@ -7,6 +11,10 @@ public class PrimeDistanceFinder {
      * @return the smallest prime distance, or -1 if there are fewer than two primes.
      */
     public static int findSmallestPrimeDistance(int[] nums) {
+        if (nums == null) {
+            return -1;
+        }
+
         List<Integer> primes = new ArrayList<>();
         for (int num : nums) {
             if (isPrime(num)) {
@@ -35,7 +43,7 @@ public class PrimeDistanceFinder {
      * @return true if the number is prime, false otherwise.
      */
     private static boolean isPrime(int number) {
-        if (number <= 1) return false;
+        if (number < 1) return false;
         for (int i = 2; i * i <= number; i++) {
             if (number % i == 0) return false;
         }
