@@ -13,12 +13,13 @@ public class NonPrimeSpiralMatrixCreator {
     }
 
     public static int[] createSpiralMatrix(int n) {
-        if (n == 0) {
+        // Solution: added if-condition to include negative numbers (which also satisfies killing mutants)
+        if (n == 0 || n <= -1) {
             return new int[0];
         }
 
         int[][] matrix = new int[n][n];
-        int val = 4; // Start with the first non-prime number greater than 1
+        int val = 1; // Start with the first non-prime number greater than 1
         int left = 0, right = n - 1, top = 0, bottom = n - 1;
 
         while (left <= right && top <= bottom) {
