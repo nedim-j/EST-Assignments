@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="CourseSchedule" />
+        <module name="climbing-stairs" />
+        <module name="BinaryTreeMaxPath" />
+        <module name="LCP" />
+        <module name="TwoSum" />
+        <module name="ArrayRotator" />
+        <module name="ZerosToEnd" />
+        <module name="SortedArray2BST" />
+        <module name="BitwiseSumCalculator" />
+        <module name="ExcelSheet" />
+        <module name="RomanToInteger" />
+        <module name="RepetitivecharFinder" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
