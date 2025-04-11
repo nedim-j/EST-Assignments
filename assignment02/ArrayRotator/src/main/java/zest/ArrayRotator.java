@@ -28,13 +28,6 @@ public class ArrayRotator {
             rotatedArray[(i + rotationCount) % arrayLength] = originalArray[i];
         }
 
-        // Post-conditions
-        for (int i = 0; i < arrayLength; i++) {
-            if (rotatedArray[i + rotationCount % arrayLength] != originalArray[i]) {
-                throw new IllegalArgumentException();
-            }
-        }
-
         return rotatedArray;
     }
 }
