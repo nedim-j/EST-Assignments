@@ -17,6 +17,11 @@ public class BitwiseSumCalculator {
             int carry = (a & b) << 1;  // Carry is AND of two bits
             a = a ^ b;                 // Sum of bits where at least one of the bits is not set
             b = carry;                 // Carry is shifted by one so that adding it to a gives the required sum
+
+            // Invariant
+            if (initialA + initialB != a + b) {
+                throw new ArithmeticException();
+            }
         }
 
         // Post-conditions
