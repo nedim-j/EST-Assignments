@@ -9,6 +9,10 @@ public class ClimbingStairs {
      * @return The number of distinct ways to climb to the top.
      */
     public long climbStairs(int n) {
+        // Pre-condition
+        if (n < 0) {
+            throw new IllegalArgumentException();
+        }
         
         // Base cases handling
         if (n == 1) {
