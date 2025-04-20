@@ -7,6 +7,10 @@ import java.util.Map;
 public class TwoSum {
 
     public int[] findTwoSum(int[] nums, int target) {
+        // Pre-condition checks
+        if (nums == null || nums.length < 2) {
+            throw new IllegalArgumentException("Input array must contain at least two elements");
+        }
 
 
         Map<Integer, Integer> numMap = new HashMap<>();
@@ -15,7 +19,8 @@ public class TwoSum {
             if (numMap.containsKey(complement)) {
                 // Post-condition checks
                 int[] result = new int[]{numMap.get(complement), i};
-                if (result[0] != result[1] && result[0] >= 0 && result[1] >= 0 && result[0] < nums.length && result[1] < nums.length) {
+                if (result[0] != result[1] && result[0] >= 0 && result[1] >= 0 && result[0] < nums.length
+                        && result[1] < nums.length && nums[result[0]] + nums[result[1]] == target) {
                     return result;
                 }
             }
