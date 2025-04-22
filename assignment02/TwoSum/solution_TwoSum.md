@@ -48,7 +48,7 @@ Based on the specified contract in the previous Task, we have come up with the f
 
 ## Property-based testing:
 We have defined the following properties:
-- For any given valid `nums` array and `target`, the output must contain exactly two indices.
+- For a valid `nums` array and `target`, the output must contain exactly two indices.
 - The sum of the elements at the output indices must equal `target`.
 - Because we have the assumption that each input would have exactly one solution, it means that we should always get the same two indices for the same input, even if `nums` is ordered differently.
 
