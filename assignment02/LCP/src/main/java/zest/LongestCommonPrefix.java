@@ -5,7 +5,20 @@ import java.util.Arrays;
 
 public class LongestCommonPrefix {
 
-    public String lcp(String[] strs) {
+    public static String lcp(String[] strs) {
+        // Pre-condition
+        if(strs == null) {
+            throw new IllegalArgumentException();
+        }
+
+        for (String str : strs) {
+            for (char c : str.toCharArray()) {
+                if (c < 'a' || c > 'z') {
+                    throw new IllegalArgumentException();
+                }
+            }
+        }
+
 
         if (strs.length == 1) {
             return strs[0];
@@ -21,6 +34,12 @@ public class LongestCommonPrefix {
             }
         }
 
+        // Post-conditions
+        for (String str : strs) {
+            if (!str.startsWith(prefix)) {
+                throw new IllegalStateException("Post-condition failed: prefix not found in all strings");
+            }
+        }
         
         return prefix;
     }

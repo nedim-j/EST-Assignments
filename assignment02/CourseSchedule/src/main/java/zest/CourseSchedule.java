@@ -5,7 +5,23 @@ import java.util.List;
 
 public class CourseSchedule {
 
-    public boolean canFinish(int numCourses, int[][] prerequisites) {
+    public static boolean canFinish(int numCourses, int[][] prerequisites) {
+
+        // Pre-conditions
+        if(numCourses <= 0 || numCourses > 64) {
+            throw new IllegalArgumentException();
+        }
+
+        if(prerequisites.length > 64) {
+            throw new IllegalArgumentException();
+        }
+
+        for(int[] prerequisite : prerequisites) {
+            if(prerequisite[0] < 0 || prerequisite[0] >= numCourses || prerequisite[1] < 0 || prerequisite[1] >= numCourses) {
+                throw new IllegalArgumentException();
+            }
+        }
+
 
         List<List<Integer>> graph = new ArrayList<>();
         for (int i = 0; i < numCourses; i++) {
@@ -29,7 +45,7 @@ public class CourseSchedule {
         return true; 
     }
 
-    private boolean hasCycle(List<List<Integer>> graph, int[] visited, int course) {
+    private static boolean hasCycle(List<List<Integer>> graph, int[] visited, int course) {
         if (visited[course] == 1) {
             return true;
         }
