@@ -32,6 +32,12 @@ The following property-based tests have been added:
 - `failArrayNull`: We take a null array and any positive `rotationCount` as input, which leads to an `IllegalArgumentException`.
 - `successRotationCountZero`: We take any randomly generated array, and a `randomCount` of `0` as input, which leads to the same array being returned as the input array.
 
+![Screenshot 1](./src/test/resources/img.png)
+
+![Screenshot 2](./src/test/resources/img_1.png)
+
+![Screenshot 3](./src/test/resources/img_2.png)
+
 ## Bugs
 
 There are no bugs in the implementation of this function.

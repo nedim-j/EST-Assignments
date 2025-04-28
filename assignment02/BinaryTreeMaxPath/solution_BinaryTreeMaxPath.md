@@ -50,6 +50,9 @@ The following property-based tests have been added:
   10000 and a random number that is less than -10000. Then, we randomly insert either the negative illegal number or
   the positive negative number as the right node of the root. Both should result in an `IllegalArgumentException`.
 
+![Screenshot 1](./src/test/resources/img.png)
+![Screenshot 2](./src/test/resources/img_1.png)
+
 ## Bugs
 
 If the input array was left empty, the program would throw an exception in its initial state. This was fixed by 

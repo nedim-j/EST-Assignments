@@ -32,6 +32,8 @@ The following property-based tests have been added:
 - `testClimbStairsNegativeInputProperty`: We take a randomly generated negative integer and expect an 
   `IllegalArgumentException` to be thrown.
 
+![Screenshot 1](./src/test/resources/img.png)
+
 ## Bugs
 
 No bugs were found in this implementation of the `ClimbingStairs.climbStairs` function.

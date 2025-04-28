@@ -32,6 +32,8 @@ reached.
 The following property-based tests have been added:
 - `testSumRandomARandomB`: We take two randomly generated integers as input and expect their sum as output.
 
+![Screenshot 1](./src/test/resources/img.png)
+
 ## Bugs
 
 No bugs were found in this implementation of the `BitwiseSumCalculator.getSum` function.
