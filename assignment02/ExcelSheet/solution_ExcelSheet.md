@@ -46,6 +46,9 @@ The following property-based tests have been added:
 - `testInRange`: We take a random string of length 1 to 7, consisting of uppercase letters A-Z, and check whether the
   result is between the range 1 and 8353082582.
 
+Jqwik output screenshot:
+![jqwik_output_ExcelSheet.png](src/test/resources/jqwik_output_ExcelSheet.png)
+
 ## Bugs
 
 We found that for the string "ZZZZZZZ" of seven Z's, which should be the highest value and is still allowed according

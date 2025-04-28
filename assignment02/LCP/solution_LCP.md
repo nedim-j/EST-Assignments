@@ -52,6 +52,10 @@ the second string is shifted by one character, if it matches with the first char
 Like in the property test before, because of random assertion failures, we shifted the first character of the second
 string by one character, if it matches with the first character of the first string.
 
+Jqwik output screenshots:
+
+![jqwik_output_LCP.png](src/test/resources/jqwik_output_LCP.png)
+
 ## Bugs
 
 We did not find any bugs in the implementation of the `LongestCommonPrefix` class.

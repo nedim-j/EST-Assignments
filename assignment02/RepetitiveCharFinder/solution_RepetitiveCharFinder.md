@@ -48,6 +48,10 @@ lowercase characters, which should always return a list of the repeating non uni
 - `testRandomNonUniqueMixedCaseCharacters`: We test the case where the input string contains random strings of non unique
 characters, but which differ in case. This should always return an empty list.
 
+Jqwik output screenshots:
+
+![jqwik_output_RepetitiveCharFinder.png](src/test/resources/jqwik_output_RepetitiveCharFinder.png)
+
 ## Bugs
 
 We found that for a null input a NullPointerException is thrown instead of an IllegalArgumentException. We fixed that by
