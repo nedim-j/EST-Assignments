@@ -60,6 +60,11 @@ For this, we have defined the following tests. If a test has the same name as fr
 - `sameLengthInputOutput`: Test with an array of length 1 to 10 containing random integer elements, check that the output has the same length as the input.
 - `inputArrayNotChanged`. Test with an array of length 1 to 10 containing random integer elements, check that the input array has not changed.
 
+### Screenshots of jqwik output:
+
+![First Screenshot](./src/test/resources/Screenshot%202025-04-28%20141205.png)
+![Second Screenshot](./src/test/resources/Screenshot%202025-04-28%20141222.png)
+
 # Test Coverage:
 The test coverage is 84% for the `zerosToEnd` function. The reason it is not 100% is because of the post-condition and invariant checks, which always pass and therefore we never reach the lines that throw exceptions, which is a good thing.
 

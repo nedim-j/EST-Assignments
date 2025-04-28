@@ -57,6 +57,11 @@ For this, we have defined the following tests. If a test has the same name as fr
 - `addition`: Test with a valid Roman numeral string that contains addition (such as III).
 - `subtraction`: Test with a valid Roman numeral string that contains subtraction (such as IV).
 
+### Screenshots of jqwik output:
+
+![First Screenshot](./src/test/resources/Screenshot%202025-04-28%20140626.png)
+![Second Screenshot](./src/test/resources/Screenshot%202025-04-28%20140750.png)
+
 
 ## Code Coverage:
 

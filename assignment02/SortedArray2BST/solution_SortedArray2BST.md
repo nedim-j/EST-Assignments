@@ -44,6 +44,11 @@ Based on the specified contract in the previous Task, we have come up with the f
 - `sortedArrayIsBalanced`: Test with a randomly generated sorted array and then checks whether the property holds that the output is a balanced Tree.
 - `imbalancedTree`: Test with a randomly generated imbalanced TreeNode and then checks whether `isBalanced` can correctly identify imbalanced trees. This ensures that, if we change the implementation of `SortedArray2BST`, that the testing Suite can correctly identify imbalanced Trees if such a bug comes up.
 
+### Screenshots of jqwik output:
+
+![First Screenshot](./src/test/resources/Screenshot%202025-04-28%20140853.png)
+![Second Screenshot](./src/test/resources/Screenshot%202025-04-28%20140913.png)
+
 ## Test Coverage:
 The test coverage is 96% for the `sortedArrayToBST` function.
 The only line that was not reached is line 83, which is the while loop that is supposed to remove trailing nulls. However, we can never reach a trailing null (i.e. the right-most leaf node is null), because of the way we handle uneven and even length of the remaining subtree.

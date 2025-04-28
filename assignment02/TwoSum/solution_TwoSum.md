@@ -57,6 +57,10 @@ For this, we have defined the following tests. If a test has the same name as fr
 - `multipleElementsFail`: Test with a `nums` array containing multiple arbitrary elements and a `target` that does not correspond to any two elements in `nums`.
 - `oneSolution`: Test with a `nums` array containing > 2 elements and a `target` that is the sum of two elements within `nums`, check that with different ordering it will still return the same result.
 
+### Screenshots of jqwik output:
+![First Screenshot](./src/test/resources/Screenshot%202025-04-28%20141017.png)
+![Second Screenshot](./src/test/resources/Screenshot%202025-04-28%20141036.png)
+
 ## Test Coverage:
 
 The test coverage is 100% for the `twoSum` function.
