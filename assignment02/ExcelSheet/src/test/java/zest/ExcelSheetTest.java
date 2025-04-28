@@ -17,6 +17,30 @@ class ExcelSheetTest {
         assertEquals(8353082582L, ExcelSheet.titleToNumber("ZZZZZZZ"));
     }
 
+    @Test
+    public void testInvalidChars() {
+        // Test invalid title
+        assertThrows(IllegalArgumentException.class, () -> {
+            ExcelSheet.titleToNumber("A1");
+        });
+    }
+
+    @Test
+    public void testEmptyTitle() {
+        // Test empty title
+        assertThrows(IllegalArgumentException.class, () -> {
+            ExcelSheet.titleToNumber("");
+        });
+    }
+
+    @Test
+    public void testTooLongTitle() {
+        // Test title that is too long
+        assertThrows(IllegalArgumentException.class, () -> {
+            ExcelSheet.titleToNumber("ZZZZZZZZ");
+        });
+    }
+
     @Property
     public void testInRange(@ForAll @IntRange(min = 1, max = 7) int length) {
         String title = "";

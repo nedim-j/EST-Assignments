@@ -28,6 +28,40 @@ class CourseScheduleTest {
         assertTrue(result);
     }
 
+    @Test
+    public void testInvalidPairLength() {
+        int[][] prerequisites = {{1, 0}, {2}};
+        assertThrows(IllegalArgumentException.class, () -> {
+            CourseSchedule.canFinish(3, prerequisites);
+        });
+    }
 
+    @Test
+    public void testPrerequisiteCourseExceedsCourseNumber() {
+        int[][] prerequisites = {{1, 0}, {2, 3}};
+        assertThrows(IllegalArgumentException.class, () -> {
+            CourseSchedule.canFinish(3, prerequisites);
+        });
+    }
+
+    @Test
+    public void testPrerequisitesLengthExceeds64() {
+        int[][] prerequisites = new int[65][2];
+        for (int i = 0; i < 65; i++) {
+            prerequisites[i][0] = 1;
+            prerequisites[i][1] = 0;
+        }
+        assertThrows(IllegalArgumentException.class, () -> {
+            CourseSchedule.canFinish(2, prerequisites);
+        });
+    }
+
+    @Test
+    public void testNumCoursesExceeds64() {
+        int[][] prerequisites = {{1, 0}, {2, 1}};
+        assertThrows(IllegalArgumentException.class, () -> {
+            CourseSchedule.canFinish(65, prerequisites);
+        });
+    }
 
 }

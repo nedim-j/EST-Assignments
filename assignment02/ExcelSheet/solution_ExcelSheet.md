@@ -36,9 +36,9 @@ value "ZZZZZZZ" = 8353082582.
 
 ## Task 1
 
-After executing the tests from task 3, JaCoCo reports 76% line coverage in the `ExcelSheet` class.
+After executing the tests from task 3, JaCoCo reports 88% line coverage in the `ExcelSheet` class.
 The missed lines were only in the pre-/post-condition and invariant checks, which simply throw errors.
-We could easily reach 100% coverage by writing some more boilerplate tests. 
+Those lines should realistically never be reached, if the implementation is correct.
 
 ## Task 4
 

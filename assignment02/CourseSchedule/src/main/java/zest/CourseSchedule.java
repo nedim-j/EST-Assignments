@@ -17,6 +17,9 @@ public class CourseSchedule {
         }
 
         for(int[] prerequisite : prerequisites) {
+            if(prerequisite.length != 2) {
+                throw new IllegalArgumentException();
+            }
             if(prerequisite[0] < 0 || prerequisite[0] >= numCourses || prerequisite[1] < 0 || prerequisite[1] >= numCourses) {
                 throw new IllegalArgumentException();
             }

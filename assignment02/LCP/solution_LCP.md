@@ -4,7 +4,7 @@
 
 <b>Pre-conditions: </b><br>
 
-- The input for `lcp` should be an array of strings of which the longest common prefix is to be found. 
+- The input for the method `lcp` should be an array of strings of which the longest common prefix is to be found. 
   The array must contain at least one string, meaning it cannot be null.
 - Every letter in the strings must be a lowercase English letter.
 
@@ -35,8 +35,8 @@ not all of them.
 ## Task 1
 
 After executing the tests from task 3, JaCoCo reports 83% line coverage in the `LongestCommonPrefix` class.
-The missed lines were only in the pre-/post-condition and invariant checks, which simply throw errors.
-We could easily reach 100% coverage by writing some more boilerplate tests.
+The missed lines were only in the pre-/post-condition checks, which simply throw errors.
+Those lines should realistically never be reached, if the implementation is correct.
 
 ## Task 4
 

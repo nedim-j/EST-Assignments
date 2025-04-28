@@ -37,7 +37,7 @@ public class LongestCommonPrefix {
         // Post-conditions
         for (String str : strs) {
             if (!str.startsWith(prefix)) {
-                throw new IllegalStateException("Post-condition failed: prefix not found in all strings");
+                throw new IllegalStateException();
             }
         }
         

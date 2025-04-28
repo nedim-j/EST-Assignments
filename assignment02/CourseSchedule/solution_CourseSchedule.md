@@ -6,7 +6,8 @@
 - The input for `numCourses` should be an integer representing the number of courses a student must complete.
   It must hold: 1 <= `numCourses` <= 64.
 - The input for `prerequisites ` should be a two-dimensional array of integers storing course pairs `[i, j]`,
-where the course `j` needs to be completed as a prerequisite for `i`. 
+where the course `j` needs to be completed as a prerequisite for `i`.
+  - It must hold: Length of `prerequisites` pairs = 2.
   - It must hold: `0 <= i < numCourses` and `0 <= j < numCourses`.
   - It must hold: `0 <= prerequisites.length <= 64`.
 
@@ -34,9 +35,7 @@ We implemented the following tests:
 
 ## Task 1
 
-After executing the tests from task 3, JaCoCo reports 89% line coverage in the `CourseSchedule` class. 
-The missed lines were in the pre-condition checks, which simply throw errors. We could easily reach 100% coverage by
-writing some more boilerplate tests. 
+After executing the tests from task 3, JaCoCo reports 100% line coverage in the `CourseSchedule` class.
 
 ## Task 4
 

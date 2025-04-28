@@ -9,6 +9,7 @@
 
 <b>Post-conditions: </b><br>
 
+- If the input string is empty, an empty list should be returned.
 - The characters in the output list should appear at least twice in the input string.
 
 <b>Invariants: </b><br>
@@ -33,7 +34,7 @@ the other in uppercase.
 
 ## Task 1
 
-After executing the tests, JaCoCo reports 86% line coverage in the `LongestCommonPrefix` class.
+After executing the tests, JaCoCo reports 86% line coverage in the `RepetitiveCharFinder` class.
 The missed lines were only in the pre-/post-condition and invariant checks, which simply throw errors. 
 Those lines should realistically never be reached, if the implementation is correct.
 
