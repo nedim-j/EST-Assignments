@@ -12,3 +12,6 @@ We have designed the following test cases:
 
 ## Test Coverage
 Jacoco reports a 100% Line and Branch coverage for the `WeatherForecast` class.
+
+## Additions
+We have overwritten the `equals` method in the `ForecastDetails` class such that we can more easily compare the returned objects with our hardcoded examples.
