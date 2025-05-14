@@ -13,5 +13,10 @@ public class EventPublisher {
             listener.onSatelliteLaunched(event);
         }
     }
+
+    // For better observability
+    public List<EventListener> getListeners() {
+        return listeners;
+    }
 }
 
