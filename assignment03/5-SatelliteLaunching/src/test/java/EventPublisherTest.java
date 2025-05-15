@@ -103,5 +103,21 @@ public class EventPublisherTest {
         verify(satelliteRegistryManager).onSatelliteLaunched(launchEvent);
         assertEquals(launchEvent, capturedLaunchEvent);
     }
+
+    @Test
+    public void testPublishSatelliteLaunched_betterObservability() {
+        SatelliteRegistryManager satelliteRegistryManager = Mockito.spy(SatelliteRegistryManager.class);
+
+        LaunchEvent launchEvent = new LaunchEvent("1", "Sputnik");
+
+        eventPublisher.subscribe(satelliteRegistryManager);
+
+        eventPublisher.publishSatelliteLaunched(launchEvent);
+
+        LaunchEvent savedLaunchEvent = satelliteRegistryManager.getLaunchEvents().get(0);
+
+        verify(satelliteRegistryManager).onSatelliteLaunched(launchEvent);
+        assertEquals(launchEvent, savedLaunchEvent);
+    }
 }
 
