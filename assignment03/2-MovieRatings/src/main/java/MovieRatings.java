@@ -23,4 +23,16 @@ public class MovieRatings {
             fetcher.close();
         }
     }
+
+    public List<String> uniqueDirectors() {
+        try {
+            List<Movie> allMovies = fetcher.all();
+            return allMovies.stream()
+                    .map(movie -> movie.getDirector())
+                    .distinct()
+                    .collect(Collectors.toList());
+        } finally {
+            fetcher.close();
+        }
+    }
 }
